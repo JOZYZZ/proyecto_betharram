@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congregación Betharram</title>
+
+    <!-- Favicon (esperando imagen .ico, .png o .svg) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- Descripción para SEO -->
+    <meta name="description" content="La Congregación Betharram ofrece espacios de retiro, eventos religiosos y una comunidad de fe comprometida. Servimos con alegría.">
+
+<!-- Palabras clave para buscadores -->
+    <meta name="keywords" content="Betharram, congregación, casa de retiro, iglesia, eventos religiosos, comunidad cristiana">
+
+<!-- Autor -->
+    <meta name="author" content="Congregación Betharram">
+
+<!-- Meta Open Graph para redes sociales -->
+    <meta property="og:title" content="Congregación Betharram">
+    <meta property="og:description" content="Espiritualidad, retiro y comunidad: la Congregación Betharram te da la bienvenida.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1569758884145-6a2e8a00e539?w=1200&auto=format&fit=crop&q=80">
+    <meta property="og:url" content="https://tusitio.com">
+    <meta property="og:type" content="website">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    max-width: 400px;
+    width: 90%;
+}
+.modal-content button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+    <!-- Encabezado -->
+<header role="banner">
+    <h1>Betharram</h1>
+    <nav role="navigation" aria-label="Menú principal">
+        <ul class="menu-principal">
+            <li><button onclick="mostrarSeccion('inicio')">Inicio</button></li>
+            <li><button onclick="mostrarSeccion('retiro')">Casa de Retiro</button></li>
+            <li><button onclick="mostrarSeccion('eventos')">Eventos</button></li>
+            <li><button onclick="mostrarSeccion('contacto')">Contacto</button></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- Contenido principal -->
+    <main role="main">
+
+    <!-- Hero o portada -->
+    <section class="hero">
+        <h2>Congregación Betharram</h2>
+        <p>Servir con alegría</p>
+    </section>
+
+    <!-- Sección ¿Quiénes somos? -->
+    <section class="quienes-somos">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos una comunidad religiosa dedicada a servir a Dios y a los demás con alegría y humildad.</p>
+    </section>
+
+    <!-- Tarjetas de secciones -->
+
+    <!-- INICIO -->
+<!-- INICIO -->
+<section id="inicio" class="seccion visible">
+  <div class="contenedor-inicio">
+    <div class="texto-inicio">
+      <h2>Bienvenidos a Betharram</h2>
+      <p>
+        La Congregación del Sagrado Corazón de Jesús de Betharram es una comunidad religiosa dedicada a servir con alegría, fe y compromiso cristiano. Nos inspiramos en el amor de Cristo para llevar esperanza a los demás.
+      </p>
+      <button id="leerMasBtn">Leer más</button>
+
+      <!-- Texto oculto inicialmente -->
+      <div id="textoCompleto" style="display: none; margin-top: 15px;">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+    </div>
+
+    <div class="imagen-inicio">
+      <img src="img/bienvenida.jpg" alt="Imagen representativa de la congregación">
+    </div>
+  </div>
+</section>
+
+
+<!-- CASA DE RETIRO -->
+<section id="retiro" class="seccion">
+    <div class="contenedor-retiro">
+    <div class="texto-retiro">
+    <h2>Casa de Retiro</h2>
+        <p>
+        Un espacio de paz y reflexión, rodeado de naturaleza, ideal para retiros espirituales, encuentros y jornadas de silencio. Nuestra casa ofrece un ambiente cálido y acogedor para desconectarse y reencontrarse con Dios.
+        </p>
+    <ul>
+        <li>✦ Habitaciones cómodas y privadas</li>
+        <li>✦ Comedor y cocina equipada</li>
+        <li>✦ Capilla disponible las 24 hs</li>
+        <li>✦ Espacios verdes y senderos</li>
+    </ul>
+    </div>
+    <div class="galeria-retiro">
+        <img src="https://images.unsplash.com/photo-1722834129124-d4150b7c501c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhc2ElMjBkZSUyMHJldGlybyUyMGNhdG9saWNvfGVufDB8fDB8fHww" alt="Capilla de la casa de retiro">
+        <img src="https://images.unsplash.com/photo-1742640807429-2938d2ab712f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhc2ElMjBkZSUyMHJldGlybyUyMGNhdG9saWNvfGVufDB8fDB8fHww" alt="Habitaciones de retiro">
+        <img src="https://media.istockphoto.com/id/1063950504/es/foto/palacio-de-verano-de-tipu-sult%C3%A1n-en-bangalore-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=rByHGzgJ1BeD05gMfAN-7Ht30GqDe2I4juAnuz7g5sQ=" alt="Jardines y naturaleza">
+    </div>
+</div>
+</section>
+
+<!-- EVENTOS -->
+<section id="eventos" class="seccion">
+<div class="contenedor-eventos">
+        <h2>Eventos Recientes</h2>
+            <div class="grid-eventos">
+    <article class="evento">
+        <img src="https://images.unsplash.com/photo-1562445735-e038b568a0a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWlzYXxlbnwwfHwwfHx8MA%3D%3D" alt="Evento religioso en la comunidad">
+        <div class="contenido-evento">
+                    <h3>Misa Juvenil</h3>
+                    <p>Una celebración especial con los jóvenes de la comunidad. Música, oración y reflexión.</p>
+                <span class="fecha-evento">12 de mayo, 2025</span>
+            </div>
+        </article>
+
+    <article class="evento">
+        <img src="https://images.unsplash.com/photo-1514523900276-aa56da36046f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGNvbnZpdmVuY2lhJTIwZXNwaXJpdHVhbCUyMGNhdG9saWNhJTIwZGlhcyUyMGRlJTIwcmV0aXJvfGVufDB8fDB8fHww" alt="Convivencia en la casa de retiro">
+        <div class="contenido-evento">
+            <h3>Convivencia Espiritual</h3>
+                <p>Dos días de retiro con dinámicas, silencio guiado y momentos de oración compartida.</p>
+            <span class="fecha-evento">28 y 29 de abril, 2025</span>
+        </div>
+    </article>
+
+    <article class="evento">
+        <img src="https://plus.unsplash.com/premium_photo-1734014585157-805c1815bbb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGFjdGl2aWRhZCUyMHNvbGlkYXJpYSUyMGNhdG9saWNhfGVufDB8fDB8fHww" alt="Actividad solidaria">
+            <div class="contenido-evento">
+                <h3>Jornada Solidaria</h3>
+                    <p>Visita a comunidades necesitadas para entregar alimentos, orar y compartir el día.</p>
+            <span class="fecha-evento">15 de abril, 2025</span>
+        </div>
+    </article>
+    </div>
+</div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="seccion">
+    <div class="contenedor-contacto">
+        <h2>Contacto</h2>
+
+    <div class="info-contacto">
+        <div class="datos">
+            <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, Provincia</p>
+            <p><strong>Teléfono:</strong> (0981) 123-456</p>
+            <p><strong>Email:</strong> contacto@betharram.org</p>
+            <p><strong>Horario:</strong> Lunes a Viernes - 8:00 a 17:00</p>
+        </div>
+
+        <div class="formulario">
+        <form id="contactForm">
+        <label for="nombre" class="label_info" >Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email" class="label_info" >Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono" class="label_info" >Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="mensaje" class="label_info" >Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+</main>
+
+<!-- Pie de página -->
+<footer role="contentinfo">
+    <p>Dirección | Ciudad, Provincia</p>
+    <div class="redes">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</footer>
+
+
+
+    <!-- Script para mostrar secciones de navegacion -->
+<!-- Script para mostrar secciones de navegación con scroll suave -->
+<script>
+function mostrarSeccion(id) {
+    // Ocultar todas las secciones
+    const secciones = document.querySelectorAll('.seccion');
+    secciones.forEach(sec => sec.classList.remove('visible'));
+
+    // Mostrar la sección correspondiente
+    const seccionMostrada = document.getElementById(id);
+    seccionMostrada.classList.add('visible');
+
+    // Quitar clase 'activo' de todos los botones
+    const botones = document.querySelectorAll('nav ul li button');
+    botones.forEach(btn => btn.classList.remove('activo'));
+
+    // Agregar clase 'activo' al botón clicado
+    const botonActivo = Array.from(botones).find(btn =>
+        btn.getAttribute('onclick')?.includes(id)
+    );
+    if (botonActivo) botonActivo.classList.add('activo');
+
+    // Scroll suave hacia la sección mostrada
+    setTimeout(() => {
+        seccionMostrada.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start' // Puedes probar también con 'center' o 'end' si lo preferís
+        });
+    }, 50); // Pequeña espera para asegurar que ya esté visible
+}
+</script>
+
+<!--Script de desplazamiento de inicio-->
+<script>
+document.getElementById("leerMasBtn").addEventListener("click", function () {
+  const extra = document.getElementById("textoCompleto");
+  const btn = document.getElementById("leerMasBtn");
+
+  if (extra.style.display === "none") {
+    extra.style.display = "block";
+    btn.textContent = "Leer menos";
+    extra.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else {
+    extra.style.display = "none";
+    btn.textContent = "Leer más";
+  }
+});
+</script>
+
+
+
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2>✅ Mensaje enviado correctamente</h2>
+        <button onclick="document.getElementById('modal').style.display='none'">OK</button>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const modal = document.getElementById('modal');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch('guardar_mensaje.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) throw new Error("Error en el servidor");
+            return response.text();
+        })
+        .then(data => {
+            modal.style.display = 'flex';
+            form.reset();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Ocurrió un error al enviar el mensaje.');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+| Parámetro          | Valor                         |
+| ------------------ | ----------------------------- |
+| **Servidor**       | `localhost`                   |
+| **Usuario**        | `root`                        |
+| **Contraseña**     | *(vacío)*                     |
+| **Base de datos**  | `contacto_db`                 |
+| **URL phpMyAdmin** | `http://localhost/phpmyadmin` |
+
+| Elemento              | URL de acceso desde navegador                         |
+| --------------------- | ----------------------------------------------------- |
+| **Página principal**  | `http://localhost/proyecto_betharram/index.html`      |
+| **Login de admin**    | `http://localhost/proyecto_betharram/admin/index.php` |
+| **Panel de mensajes** | *(Se accede después del login exitoso)*               |

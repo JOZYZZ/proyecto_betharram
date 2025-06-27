@@ -1,0 +1,182 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 2rem; /* opcional, solo para separar del footer */
+}
+
+footer {
+    background-color: #b08a57;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto; /* esto empuja el footer hacia abajo si hay poco contenido */
+}
+
+
+/* panel.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdf8ee;
+    color: #3f2d20;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #b08a57;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #e6d3b0;
+}
+
+.btn-descargar {
+    background-color: #b08a57;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-descargar:hover {
+    background-color: #926f44;
+}
+
+
+/* Toast Noti de mensaje enviado */
+
+.toast {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3f2d20;
+    color: #fdf8ee;
+    padding: 12px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: top 0.4s ease;
+    z-index: 9999;
+}
+
+.toast .checkmark {
+    font-size: 1.2rem;
+}
+
+.toast.show {
+    top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Efecto de desplazamiento suave */
+.toast {
+    transition: top 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+.toast.show {
+    top: 20px;
+    opacity: 1;
+}
+
+.crear-usuario-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #856740;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.crear-usuario-btn:hover {
+    background-color: #9e7f5c;
+}
+
+
+@media (max-width: 768px) {
+header h1 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+form {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+input[type="date"],
+.btn-descargar {
+    width: 100%;
+}
+
+table {
+    font-size: 0.9rem;
+}
+
+table th,
+table td {
+    padding: 0.4rem;
+    word-break: break-word;
+}
+
+.btn-descargar {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+}
+}
